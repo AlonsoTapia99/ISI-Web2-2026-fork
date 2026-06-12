@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miembros del Equipo</title>
+</head>
+<body>
+
+    <h1>👥 Consulta de Miembros del Equipo</h1>
+    
+    <div>
+        <label for="teamIdMembersInput">ID del Equipo: </label>
+        <input type="number" id="teamIdMembersInput" value="1">
+        <button id="btnCargarMiembros">Cargar Miembros</button>
+    </div>
+
+    <hr>
+
+    <h3>Lista de Miembros en el Equipo:</h3>
+    <p id="mensajeEstadoMembers">Presiona el botón para consultar...</p>
+    
+    <ul id="listaMiembros"></ul>
+
+    <hr>
+
+    <h2>➕ Agregar Miembro al Equipo</h2>
+    <div>
+        <label for="newMemberUserIdInput">ID del Usuario: </label>
+        <input type="number" id="newMemberUserIdInput" placeholder="Ej: 1005"><br><br>
+        
+        <label for="newMemberRoleInput">Rol del Miembro: </label>
+        <input type="text" id="newMemberRoleInput" placeholder="Ej: Member o Admin">
+        
+        <button id="btnAgregarMiembro">Agregar Miembro</button>
+    </div>
+    
+    <p id="mensajeAgregarMemberEstado">Completa los campos y presiona Agregar...</p>
+
+    <hr>
+
+    <h2>🗑️ Remover Miembro del Equipo</h2>
+    <div>
+        <label for="deleteMemberUserIdInput">ID del Usuario a remover: </label>
+        <input type="number" id="deleteMemberUserIdInput" placeholder="Ej: 1" style="width: 60px;">
+        
+        <button id="btnEliminarMiembro" style="background-color: #ff4d4d; color: white; border: none; padding: 5px 10px; cursor: pointer;">Remover Miembro</button>
+    </div>
+    <p id="mensajeDeleteMemberEstado">Ingresa el ID del usuario y presiona Remover...</p>
+
+    <hr>
+
+    <h2>✏️ Actualizar Rol de Miembro</h2>
+    <div>
+        <label for="putMemberUserIdInput">ID del Usuario: </label>
+        <input type="number" id="putMemberUserIdInput" placeholder="Ej: 1" style="width: 60px;"><br><br>
+
+        <label for="putMemberRoleInput">Nuevo Rol: </label>
+        <input type="text" id="putMemberRoleInput" placeholder="Ej: Admin">
+        
+        <button id="btnActualizarMiembro">Actualizar Rol</button>
+    </div>
+    <p id="mensajePutMemberEstado">Ingresa los datos y presiona Actualizar...</p>
+
+    <script src="./members.js" type="module"></script>
+
+</body>
+</html>
